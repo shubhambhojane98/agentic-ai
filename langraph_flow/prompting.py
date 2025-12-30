@@ -9,7 +9,7 @@ load_dotenv()
 
 llm = ChatOpenAI(model="gpt-3.5-turbo")
 
-## Grpah State
+## Graph State
 class State(TypedDict):
     topic:str
     story:str
