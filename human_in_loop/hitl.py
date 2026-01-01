@@ -71,3 +71,7 @@ result = app.invoke(
     config={"configurable": {"thread_id": thread_id}}
 )
 print(result)
+
+# LangGraph interrupts do not collect input directly. 
+# They pause execution and return control to the caller, 
+# who must resume the graph using the same thread_id with human input supplied externally.
